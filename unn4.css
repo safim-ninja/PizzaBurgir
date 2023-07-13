@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 0, 0, 0.7)),url(images/background.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.header{
+    /* min-height: 100vh; */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* box-shadow: #181818; */
+    color: #181818;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+nav img{
+    height: 44.4px;
+    width: 49.0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(20, 0, 0, 0.7)),url(images/burgir-logo.png);
+
+}
+
+.navigation{
+    flex: 1;
+    text-align: right;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navigation ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navigation ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.navigation ul li:hover::after{
+    width: 90%;
+}
+
+.text-box{
+    /* color: bisque; */
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+    /* width: 200px; */
+    max-width: 200px;
+}
+
+form{
+    margin-left: 400px;
+    text-decoration: none;
+    float: inline-start;
+    text-align: center;
+}
+form label{
+    padding-left: 4px;
+    text-align: center;
+    align-self: center;
+}
+form div label{
+    padding-left: 4px;
+    text-align: center;
+    align-self: center;
+}
+form input{
+    border-radius: 5px;
+    height: 30px;
+    border:rgba(0, 0, 0, 0.7)
+}
+form button{
+    margin: 5px 4px;
+    background-color: rgb(178, 180, 180);
+    border-radius: 3px;
+    height: 25px;
+    width: 60px;
+    border: #fff;
+    color: #181818;
+    font-weight: bold;
+}
+
+.text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text h1{
+    font-size: 62px;
+}
+.text a{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.items{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+.items h1{
+    color: aliceblue;
+    font-size: 20px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row h3{
+    color: aliceblue;
+    font-size: 20px;
+}
+.row ul li{
+    text-align: left;
+    margin-left: 10px;
+}
+.item-col{
+    flex-basis: 31%;
+    background: #882b1b6e;
+    border-radius: 1%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.success-message{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+.success-message h1, p{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+.profile{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 10%;
+}
+.items-list{
+    /* color: bisque; */
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+    /* width: 200px; */
+    max-width: 200px;
+}
